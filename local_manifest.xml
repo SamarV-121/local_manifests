@@ -29,6 +29,9 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <remove-project name="platform/external/libcxx"/>
+  <project path="external/libcxx" name="LineageOS/android_external_libcxx" remote="github" revision="7cc0419541c95d9665fbba7b58389cf6238cb48b" />
+
   <remove-project name="platform/external/selinux"/>
   <project path="external/selinux" name="SamarV-121/platform_external_selinux" remote="github" />
 
@@ -37,6 +40,18 @@
 
   <remove-project name="platform/frameworks/base"/>
   <project path="frameworks/base" name="SamarV-121/platform_frameworks_base" remote="github" />
+
+  <remove-project name="platform/frameworks/native"/>
+  <project path="frameworks/native" name="LineageOS/android_frameworks_native" remote="github" revision="bd5a5664081614b4e49c86e4b1dc73d53a4014b7" />
+
+  <remove-project name="platform/packages/apps/Settings"/>
+  <project path="packages/apps/Settings" name="LineageOS/android_packages_apps_Settings" remote="github" revision="477bdeb25ab7ae7a290f7a6d958fc4247486964b" />
+
+  <remove-project name="platform/system/bpf"/>
+  <project path="system/bpf" name="phhusson/platform_system_bpf" remote="github" revision="1babe124330ea693d4a3d6761b2c78d7a035aa4e" />
+
+  <remove-project name="platform/system/netd"/>
+  <project path="system/netd" name="phhusson/platform_system_netd" remote="github" revision="2d2793018bf3590f667e2894fb36ba61d3d1bf82" />
 
   <remove-project name="platform/system/tools/mkbootimg"/>
   <project path="system/tools/mkbootimg" name="SamarV-121/platform_system_tools_mkbootimg" remote="github" />
