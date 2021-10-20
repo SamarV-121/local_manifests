@@ -12,8 +12,11 @@
            fetch="https://gitlab.com/"
            revision="android-12.0" />
 
+  <remove-project name="platform/bootable/recovery"/>
+  <project path="bootable/recovery" name="SamarV-121/platform_bootable_recovery" remote="github" />
+
   <remove-project name="platform/build"/>
-  <project path="build/make" name="SamarV-121/platform_build_make" remote="github" >
+  <project path="build/make" name="SamarV-121/platform_build" remote="github" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -49,6 +52,9 @@
 
   <remove-project name="platform/system/bpf"/>
   <project path="system/bpf" name="phhusson/platform_system_bpf" remote="github" revision="1babe124330ea693d4a3d6761b2c78d7a035aa4e" />
+
+  <remove-project name="platform/system/core"/>
+  <project path="system/core" name="SamarV-121/platform_system_core" remote="github" />
 
   <remove-project name="platform/system/netd"/>
   <project path="system/netd" name="phhusson/platform_system_netd" remote="github" revision="2d2793018bf3590f667e2894fb36ba61d3d1bf82" />
